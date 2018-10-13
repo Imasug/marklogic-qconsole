@@ -18,7 +18,7 @@ function Adhoc-Query {
 
     $query = Get-Content $FileName -Raw -Encoding UTF8
     # TODO is this code ok?
-    $query = $query.Replace('"', "'")
+    $query = $query.Replace('"', "\`"")
     java -cp $ClassPath $MainClass $ServerURI $query
 
     return
