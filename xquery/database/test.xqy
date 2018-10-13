@@ -1,3 +1,3 @@
 xquery version "1.0-ml";
 
-xdmp:log("test")
+cts:search(/, cts:word-query("aaa"))

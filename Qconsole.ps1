@@ -21,4 +21,6 @@ if (!$connections.ContainsKey($target)) {
 
 $serverURI = Create-MarkLogicServerURI $connections[$target]
 
-Adhoc-Query $serverURI $FileName | ConvertFrom-Json | Format-List
+$response = Adhoc-Query $serverURI $FileName | ConvertFrom-Json
+
+$response.results | Format-List
