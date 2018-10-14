@@ -1,7 +1,7 @@
 $user = "admin"
 $password = "password"
 $address = "localhost"
-$port = 8000
+$port = 8006
 
 $database = @{
     user     = $user;

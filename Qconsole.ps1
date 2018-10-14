@@ -23,4 +23,6 @@ $serverURI = Create-MarkLogicServerURI $connections[$target]
 
 $response = Adhoc-Query $serverURI $FileName | ConvertFrom-Json
 
-$response.results | Format-List
+# $response.results | Format-List
+
+$response.results

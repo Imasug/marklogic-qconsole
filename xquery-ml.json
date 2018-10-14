@@ -1,0 +1,41 @@
+{
+	"import module namespace cpf": {
+		"prefix": "import module namespace cpf",
+		"body": [
+			"import module namespace cpf = \"http://marklogic.com/cpf\" at \"/MarkLogic/cpf/cpf.xqy\";"
+		],
+		"description": ""
+	},
+	"import module namespace search": {
+		"prefix": "import module namespace search",
+		"body": [
+			"import module namespace search = \"http://marklogic.com/appservices/search\" at \"/MarkLogic/appservices/search/search.xqy\";"
+		],
+		"description": ""
+	},
+	"declare variable": {
+		"prefix": "declare variable",
+		"body": [
+			"declare variable $${1:name} as ${2:type};"
+		],
+		"description": ""
+	},
+	"let": {
+		"prefix": "let",
+		"body": [
+			"let $${1:name} := ${2:value}",
+			"return",
+			"${3:processing}${4:[,others]}"
+		],
+		"description": ""
+	},
+	"try": {
+		"prefix": "try",
+		"body": [
+			"try {",
+			"} catch ($e) {",
+			"}"
+		],
+		"description": ""
+	}
+}
